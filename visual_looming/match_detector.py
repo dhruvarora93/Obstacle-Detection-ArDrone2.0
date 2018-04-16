@@ -15,7 +15,7 @@ class OrbTracker(object):
         self.des2 = None        # type: numpy.ndarray of numpy.uint8 values.
 
         self.orb = cv2.orb = cv2.ORB_create(
-            nfeatures=400, scaleFactor=1.2, WTA_K=2, scoreType=cv2.ORB_HARRIS_SCORE,
+            nfeatures=1000, scaleFactor=1.2, WTA_K=2, scoreType=cv2.ORB_HARRIS_SCORE,
                                             patchSize=31, nlevels=8)
 
         self.kp2_calculated = False  # no need to calculate same again

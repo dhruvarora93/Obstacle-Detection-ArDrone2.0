@@ -53,10 +53,10 @@ class TrackingTest(object):
             ret, temp = self.cap.read()
         if ret:
             self.template = temp
-            print "template captured"
+            print ("template captured")
             return self.template
         else:
-            print "template update failed"
+            print ("template update failed")
             return None
 
     def process_next_image(self, img):
